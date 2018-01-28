@@ -9,8 +9,7 @@
 set npm_location=
 set /P npm_location=please enter the full path of npm.cmd (hit enter to default to %programfiles%\nodejs\npm.cmd)
 if not defined npm_location set npm_location=%programfiles%\nodejs\npm.cmd
-echo %npm_location%
-exit /b
+echo using %npm_location%
 
 :: these are just reminders for me and the things I was using on my system when I had this issue
 ::
