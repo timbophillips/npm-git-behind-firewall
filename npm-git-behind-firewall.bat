@@ -5,7 +5,12 @@
 :: 2. tells npm which version of c++ compiler and where it is
 
 :: constants to set for your system
-set npm_location=d:\nodejs\npm.cmd
+:: default is C:\Program Files\nodejs\mpm.cmd
+set npm_location=
+set /P npm_location=please enter the full path of npm.cmd (hit enter to default to %programfiles%\nodejs\npm.cmd)
+if not defined npm_location set npm_location=%programfiles%\nodejs\npm.cmd
+echo %npm_location%
+exit /b
 
 :: these are just reminders for me and the things I was using on my system when I had this issue
 ::
