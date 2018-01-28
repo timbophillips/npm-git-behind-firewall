@@ -2,7 +2,7 @@
 
 :: this batch file:
 :: 1. sets the username, password, and web proxy server in npm, git, and the windows environment.
-:: 2. tells nom which version of c++ compiler and where it is
+:: 2. tells npm which version of c++ compiler and where it is
 
 :: constants to set for your system
 set npm_location=d:\nodejs\npm.cmd
