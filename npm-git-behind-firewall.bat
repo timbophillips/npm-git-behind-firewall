@@ -34,11 +34,12 @@ echo.
 
 :: get the url and port of the web proxy and then the user's password
 set /P proxy_url_and_port=please enter your proxy server url and port in the format url:port beginning after http://
+set /P name=please enter your proxy username: 
 set /P password=please enter your windows password: 
 
 :: use this info to create a proxy string
-set address=http://%username%:%password%@%proxy_url_and_port%
-set node_address=http://%username%:%password%@%proxy_url_and_port%
+set address=http://%name%:%password%@%proxy_url_and_port%
+set node_address=http://%  name%:%password%@%proxy_url_and_port%
 
 :: set the widows environment variables temporary and permament (set and setx.exe)
 %WINDIR%\SYSTEM32\setx.exe http_proxy %address%
