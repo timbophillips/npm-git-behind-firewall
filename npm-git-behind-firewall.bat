@@ -71,6 +71,10 @@ git config --global http.proxy %address%
 :: set the c++ compilar version for npm
 echo setting the npm c++ compiler flag
 call npm config set msvs_version 2015 -g
+
+:: make sure it uses old not new python
+npm config set python python2.7
+
 :: tel npm where the c++ compiler lives (this works if you've installed the vc++ tools from the db link)
 echo set the VCTargetsPath variables for C++ in npm
 %WINDIR%\SYSTEM32\setx.exe VCTargetsPath "%programfiles(x86)%\MSBuild\Microsoft.Cpp\v4.0\V140"
