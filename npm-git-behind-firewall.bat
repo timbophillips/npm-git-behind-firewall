@@ -39,7 +39,7 @@ set /P password=please enter your windows password:
 
 :: use this info to create a proxy string
 set address=http://%name%:%password%@%proxy_url_and_port%
-set node_address=http://%  name%:%password%@%proxy_url_and_port%
+set node_address=http://%name%:%password%@%proxy_url_and_port%
 
 :: set the widows environment variables temporary and permament (set and setx.exe)
 %WINDIR%\SYSTEM32\setx.exe http_proxy %address%
