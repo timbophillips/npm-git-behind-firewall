@@ -33,7 +33,7 @@ echo http://couchdb.apache.org/#download
 echo.
 
 :: get the url and port of the web proxy and then the user's password
-set /P proxy_url_and_port=please enter your proxy server url and port in the format url:port beginning after http://
+set /P proxy_url_and_port=please enter proxy server url:port eg 203.0.172.3:8181 beginning after http://
 set /P name=please enter your proxy username: 
 set /P password=please enter your windows password: 
 
