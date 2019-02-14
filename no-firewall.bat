@@ -56,6 +56,7 @@ call npm config rm no-proxy
 :: tell git to use the proxy
 echo removing the git proxy
 git config --global --unset core.gitproxy
+git config --global --unset http.proxy
 
 :: set the c++ compilar version for npm
 echo set the npm c++ compiler flag
